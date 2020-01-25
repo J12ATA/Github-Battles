@@ -18,7 +18,7 @@ class PlayerInput extends React.Component {
   handleChange = (event) => {
     const value = event.target.value;
 
-    this.setState(() =>({username: value}))
+    this.setState(() => ({username: value}))
   }
   handleSubmit = (event) => {
     event.preventDefault();
@@ -29,8 +29,8 @@ class PlayerInput extends React.Component {
     );
   }
   render() {
-    const {username} = this.state,
-    {label} = this.props;
+    const {username} = this.state;
+    const {label} = this.props;
 
     return(
       <form className='column' onSubmit={this.handleSubmit}>
